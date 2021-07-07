@@ -1,0 +1,8 @@
+{
+  "name": "lecture-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "fb07c610"
+}

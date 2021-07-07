@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Journal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-textarea placeholder="Enter journal entry" [(ngModel)]="currentBlog"></ion-textarea>
+  </ion-item>
+  <ion-button expand="full" (click)="addBlog()">Add blog</ion-button>
+
+  <ion-item *ngFor="let blog of blogList.reverse()">
+    <ion-label text-wrap>
+      <h3> {{ blog }} </h3>
+    </ion-label>
+  </ion-item>
+
+
+</ion-content>
